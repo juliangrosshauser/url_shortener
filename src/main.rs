@@ -1,4 +1,7 @@
+extern crate url;
+
 use std::env;
+use url::Url;
 
 fn usage() {
     println!("\
@@ -16,5 +19,12 @@ fn main() {
         return;
     }
 
-    let _url = &args[1];
+    let url = Url::parse(&args[1]);
+
+    if url.is_err() {
+        usage();
+        return;
+    }
+
+    let _url = url.unwrap();
 }

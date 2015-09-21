@@ -2,3 +2,6 @@
 name = "url_shortener"
 version = "0.0.1"
 authors = ["Julian Grosshauser <julian@juliangrosshauser.com>"]
+
+[dependencies.url]
+git = "https://github.com/servo/rust-url"

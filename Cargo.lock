@@ -1,0 +1,4 @@
+[root]
+name = "url_shortener"
+version = "0.0.1"
+

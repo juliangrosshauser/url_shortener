@@ -5,3 +5,4 @@ authors = ["Julian Grosshauser <julian@juliangrosshauser.com>"]
 
 [dependencies]
 url = { git = "https://github.com/servo/rust-url" }
+postgres = "*"

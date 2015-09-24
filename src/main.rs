@@ -3,6 +3,12 @@ extern crate url;
 use std::env;
 use url::Url;
 
+const POSTGRES_HOST: &'static str = env!("POSTGRES_HOST");
+const POSTGRES_PORT: &'static str = env!("POSTGRES_PORT");
+const POSTGRES_USER: &'static str = env!("POSTGRES_USER");
+const POSTGRES_PASSWORD: &'static str = env!("POSTGRES_PASSWORD");
+const POSTGRES_DATABASE: &'static str = env!("POSTGRES_DATABASE");
+
 fn usage() {
     println!("\
 URL Shortener

@@ -36,6 +36,15 @@ fn main() {
     }
 
     let _url = url.unwrap();
+
+    let connection = connect();
+
+    if connection.is_err() {
+        println!("Couldn't connect to database");
+        return;
+    }
+
+    let _connection = connection.unwrap();
 }
 
 fn connect() -> Result<Connection, ConnectError> {

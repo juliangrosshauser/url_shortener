@@ -11,6 +11,7 @@ const POSTGRES_PORT: &'static str = env!("POSTGRES_PORT");
 const POSTGRES_USER: &'static str = env!("POSTGRES_USER");
 const POSTGRES_PASSWORD: &'static str = env!("POSTGRES_PASSWORD");
 const POSTGRES_DATABASE: &'static str = env!("POSTGRES_DATABASE");
+const POSTGRES_TABLE: &'static str = "urls";
 
 fn usage() {
     println!("\
